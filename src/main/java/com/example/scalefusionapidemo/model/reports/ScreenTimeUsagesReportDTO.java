@@ -1,7 +1,7 @@
 package com.example.scalefusionapidemo.model.reports;
 
-import com.example.scalefusionapidemo.model.error.ErrorDTO;
 import com.example.scalefusionapidemo.model.devices.DeviceDTO;
+import com.example.scalefusionapidemo.model.error.ErrorDTO;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
