@@ -1,5 +1,6 @@
 package com.example.scalefusionapidemo.model.devices;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -7,6 +8,13 @@ import lombok.Setter;
 @Setter
 public class DeviceCustomPropertiesDTO {
 
-    // TODO it should be some fields, but as there is no info about fields
+    @JsonProperty("name")
+    private String name;
+
+    @JsonProperty("value")
+    private String value;
+
+    @JsonProperty("data_type")
+    private String dataType;
 
 }

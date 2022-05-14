@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Getter
 @Setter
@@ -104,8 +105,8 @@ public class DeviceDTO {
     @JsonProperty("os_type")
     private String osType;
 
-//    @JsonProperty("custom_properties")
-//    private DeviceCustomPropertiesDTO customProperties;
+    @JsonProperty("custom_properties")
+    private List<DeviceCustomPropertiesDTO> customProperties;
 
     @JsonProperty("location")
     private DeviceLocationDTO location;
