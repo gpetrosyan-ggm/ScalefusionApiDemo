@@ -1,0 +1,5 @@
+###
+GET http://localhost:8088/scalefusion/demo/devices
+
+###
+GET http://localhost:8088/scalefusion/demo/screen/report?fromDate=2022-05-10&toDate=2022-05-20
