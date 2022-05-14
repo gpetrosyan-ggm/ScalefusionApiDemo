@@ -1,4 +1,4 @@
-package com.example.scalefusionapidemo.model.devices;
+package com.example.scalefusionapidemo.common.model.error;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -10,12 +10,12 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class DeviceProfileDTO {
+public class ErrorDTO {
 
-    @JsonProperty("id")
-    private Long id;
+    @JsonProperty("code")
+    private Long code;
 
-    @JsonProperty("name")
-    private String name;
+    @JsonProperty("error_message")
+    private String errorMessage;
 
 }

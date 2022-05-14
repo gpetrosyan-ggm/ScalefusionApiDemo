@@ -1,4 +1,4 @@
-package com.example.scalefusionapidemo.model.devices;
+package com.example.scalefusionapidemo.common.model.devices;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;

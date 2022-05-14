@@ -1,4 +1,4 @@
-package com.example.scalefusionapidemo.model.base;
+package com.example.scalefusionapidemo.common.model.base;
 
 public class Pair<U, V> {
     public final U key;

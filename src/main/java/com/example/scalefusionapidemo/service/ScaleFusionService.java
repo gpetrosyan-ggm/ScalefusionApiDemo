@@ -1,7 +1,7 @@
 package com.example.scalefusionapidemo.service;
 
-import com.example.scalefusionapidemo.model.devices.AllDevicesDTO;
-import com.example.scalefusionapidemo.model.reports.ScreenTimeUsagesReportDTO;
+import com.example.scalefusionapidemo.common.model.devices.AllDevicesDTO;
+import com.example.scalefusionapidemo.common.model.reports.ScreenTimeUsagesReportDTO;
 
 import java.time.LocalDate;
 

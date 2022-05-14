@@ -1,4 +1,4 @@
-package com.example.scalefusionapidemo.model.devices;
+package com.example.scalefusionapidemo.common.model.devices;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -10,9 +10,12 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class DevicesListDTO {
+public class DeviceGroupDTO {
 
-    @JsonProperty("device")
-    private DeviceDTO device;
+    @JsonProperty("id")
+    private Long id;
+
+    @JsonProperty("name")
+    private String name;
 
 }

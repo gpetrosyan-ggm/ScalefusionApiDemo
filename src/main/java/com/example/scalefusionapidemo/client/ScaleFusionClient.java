@@ -1,8 +1,8 @@
 package com.example.scalefusionapidemo.client;
 
-import com.example.scalefusionapidemo.model.base.ApiResponseModel;
-import com.example.scalefusionapidemo.model.devices.AllDevicesDTO;
-import com.example.scalefusionapidemo.model.reports.ScreenTimeUsagesReportDTO;
+import com.example.scalefusionapidemo.common.model.base.ApiResponseModel;
+import com.example.scalefusionapidemo.common.model.devices.AllDevicesDTO;
+import com.example.scalefusionapidemo.common.model.reports.ScreenTimeUsagesReportDTO;
 import org.springframework.lang.NonNull;
 
 import java.time.LocalDate;

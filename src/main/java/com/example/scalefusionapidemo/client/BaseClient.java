@@ -1,7 +1,7 @@
 package com.example.scalefusionapidemo.client;
 
-import com.example.scalefusionapidemo.model.base.ApiResponseModel;
-import com.example.scalefusionapidemo.model.base.Pair;
+import com.example.scalefusionapidemo.common.model.base.ApiResponseModel;
+import com.example.scalefusionapidemo.common.model.base.Pair;
 
 import java.util.List;
 import java.util.Optional;

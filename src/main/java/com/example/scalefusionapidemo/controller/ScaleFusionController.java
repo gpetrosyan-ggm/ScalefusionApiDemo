@@ -1,7 +1,8 @@
 package com.example.scalefusionapidemo.controller;
 
-import com.example.scalefusionapidemo.model.devices.AllDevicesDTO;
-import com.example.scalefusionapidemo.model.reports.ScreenTimeUsagesReportDTO;
+import com.example.scalefusionapidemo.common.model.devices.AllDevicesDTO;
+import com.example.scalefusionapidemo.common.model.reports.ScreenTimeUsagesReportDTO;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,8 +24,8 @@ public interface ScaleFusionController {
             @RequestParam(value = "page", required = false) Long page,
             @RequestParam(value = "deviceIds", required = false) Long[] deviceIds,
             @RequestParam(value = "deviceGroupIds", required = false) Long[] deviceGroupIds,
-            @RequestParam(value = "fromDate") LocalDate fromDate,
-            @RequestParam(value = "fromDate") LocalDate toDate
+            @RequestParam(value = "fromDate") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate fromDate,
+            @RequestParam(value = "toDate") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate toDate
     );
 
 }

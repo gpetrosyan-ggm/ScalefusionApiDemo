@@ -1,8 +1,8 @@
 package com.example.scalefusionapidemo.client.impl;
 
 import com.example.scalefusionapidemo.client.BaseClient;
-import com.example.scalefusionapidemo.model.base.ApiResponseModel;
-import com.example.scalefusionapidemo.model.base.Pair;
+import com.example.scalefusionapidemo.common.model.base.ApiResponseModel;
+import com.example.scalefusionapidemo.common.model.base.Pair;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;

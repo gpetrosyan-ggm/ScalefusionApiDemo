@@ -3,10 +3,11 @@ package com.example.scalefusionapidemo.client.impl;
 import com.example.scalefusionapidemo.client.BaseClient;
 import com.example.scalefusionapidemo.client.ScaleFusionClient;
 import com.example.scalefusionapidemo.client.properties.ScaleFusionProperties;
-import com.example.scalefusionapidemo.model.base.ApiResponseModel;
-import com.example.scalefusionapidemo.model.base.Pair;
-import com.example.scalefusionapidemo.model.devices.AllDevicesDTO;
-import com.example.scalefusionapidemo.model.reports.ScreenTimeUsagesReportDTO;
+import com.example.scalefusionapidemo.common.model.base.ApiResponseModel;
+import com.example.scalefusionapidemo.common.model.base.Pair;
+import com.example.scalefusionapidemo.common.model.devices.AllDevicesDTO;
+import com.example.scalefusionapidemo.common.model.reports.ScreenTimeUsagesReportDTO;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,8 +54,9 @@ public class ScaleFusionClientImpl implements ScaleFusionClient {
                 fromDate,
                 toDate);
         List<Pair<String, Object>> params = Arrays.asList(Pair.of("page", page),
-                                                          Pair.of("device_ids", deviceIds),
-                                                          Pair.of("device_group_ids", deviceGroupIds),
+                                                          Pair.of("device_ids", StringUtils.join(deviceIds, ",")),
+                                                          Pair.of("device_group_ids",
+                                                                  StringUtils.join(deviceGroupIds, ",")),
                                                           Pair.of("from_date", fromDate),
                                                           Pair.of("to_date", toDate));
         return baseClient.getRequest(scaleFusionProperties.getRootUri(),

@@ -1,9 +1,9 @@
 package com.example.scalefusionapidemo.service.impl;
 
 import com.example.scalefusionapidemo.client.ScaleFusionClient;
-import com.example.scalefusionapidemo.model.base.ApiResponseModel;
-import com.example.scalefusionapidemo.model.devices.AllDevicesDTO;
-import com.example.scalefusionapidemo.model.reports.ScreenTimeUsagesReportDTO;
+import com.example.scalefusionapidemo.common.model.base.ApiResponseModel;
+import com.example.scalefusionapidemo.common.model.devices.AllDevicesDTO;
+import com.example.scalefusionapidemo.common.model.reports.ScreenTimeUsagesReportDTO;
 import com.example.scalefusionapidemo.service.ScaleFusionService;
 import org.apache.commons.lang3.BooleanUtils;
 import org.slf4j.Logger;

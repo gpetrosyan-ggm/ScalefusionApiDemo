@@ -1,4 +1,4 @@
-package com.example.scalefusionapidemo.model.base;
+package com.example.scalefusionapidemo.common.model.base;
 
 import lombok.Getter;
 import lombok.Setter;

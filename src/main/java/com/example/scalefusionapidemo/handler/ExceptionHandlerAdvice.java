@@ -1,6 +1,6 @@
 package com.example.scalefusionapidemo.handler;
 
-import com.example.scalefusionapidemo.model.error.ErrorDTO;
+import com.example.scalefusionapidemo.common.model.error.ErrorDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

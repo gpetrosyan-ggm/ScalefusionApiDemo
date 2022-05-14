@@ -1,12 +1,13 @@
-package com.example.scalefusionapidemo.model.reports;
+package com.example.scalefusionapidemo.common.model.reports;
 
-import com.example.scalefusionapidemo.model.devices.DeviceDTO;
-import com.example.scalefusionapidemo.model.error.ErrorDTO;
+import com.example.scalefusionapidemo.common.model.error.ErrorDTO;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -15,7 +16,7 @@ import lombok.Setter;
 public class ScreenTimeUsagesReportDTO extends ErrorDTO {
 
     @JsonProperty("devices")
-    private DeviceDTO devices;
+    private List<DeviceScreenReportDTO> devices;
 
     @JsonProperty("total_count")
     private Long totalCount;

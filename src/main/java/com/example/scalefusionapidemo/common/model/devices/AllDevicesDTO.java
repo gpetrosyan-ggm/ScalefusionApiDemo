@@ -1,6 +1,6 @@
-package com.example.scalefusionapidemo.model.devices;
+package com.example.scalefusionapidemo.common.model.devices;
 
-import com.example.scalefusionapidemo.model.error.ErrorDTO;
+import com.example.scalefusionapidemo.common.model.error.ErrorDTO;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
