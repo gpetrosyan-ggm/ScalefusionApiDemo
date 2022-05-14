@@ -1,9 +1,9 @@
 package com.example.scalefusionapidemo.controller.impl;
 
-import com.example.scalefusionapidemo.common.validator.ScaleFusionValidator;
-import com.example.scalefusionapidemo.controller.ScaleFusionController;
 import com.example.scalefusionapidemo.common.model.devices.AllDevicesDTO;
 import com.example.scalefusionapidemo.common.model.reports.ScreenTimeUsagesReportDTO;
+import com.example.scalefusionapidemo.common.validator.ScaleFusionValidator;
+import com.example.scalefusionapidemo.controller.ScaleFusionController;
 import com.example.scalefusionapidemo.service.ScaleFusionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
