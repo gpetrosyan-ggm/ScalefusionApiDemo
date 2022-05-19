@@ -9,17 +9,16 @@ public class Pair<U, V> {
         this.value = value;
     }
 
+    public static <U, V> Pair<U, V> of(U a, V b) {
+        return new Pair<>(a, b);
+    }
+
     public U getKey() {
         return key;
     }
 
     public V getValue() {
         return value;
-    }
-
-    public static <U, V> Pair<U, V> of(U a, V b) {
-        // calls private constructor
-        return new Pair<>(a, b);
     }
 
 }
