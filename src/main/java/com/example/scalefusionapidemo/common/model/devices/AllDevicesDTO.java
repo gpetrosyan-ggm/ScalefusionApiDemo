@@ -2,10 +2,7 @@ package com.example.scalefusionapidemo.common.model.devices;
 
 import com.example.scalefusionapidemo.common.model.error.ErrorDTO;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
@@ -13,6 +10,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class AllDevicesDTO extends ErrorDTO {
 
     @JsonProperty("total_count")

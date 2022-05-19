@@ -3,9 +3,11 @@ package com.example.scalefusionapidemo.common.model.devices;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
+@ToString
 public class DeviceCustomPropertiesDTO {
 
     @JsonProperty("name")
