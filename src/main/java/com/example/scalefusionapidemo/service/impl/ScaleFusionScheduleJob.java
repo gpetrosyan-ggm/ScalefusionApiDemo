@@ -23,6 +23,9 @@ public class ScaleFusionScheduleJob {
 
     @Scheduled(fixedDelayString = "${all.devices.fetch.fixedDelay.in.milliseconds}")
     public void allDevicesSchedule() {
+        if (!scaleFusionScheduleProperties.getEnabled()) {
+            return;
+        }
         final Long deviceId = scaleFusionScheduleProperties.getDeviceId();
         final Long deviceProfileId = scaleFusionScheduleProperties.getDeviceProfileId();
         logger.info("Fetching ScaleFusion devices: Device Id: {}, Device Profile Id: {}, Date: {}.",

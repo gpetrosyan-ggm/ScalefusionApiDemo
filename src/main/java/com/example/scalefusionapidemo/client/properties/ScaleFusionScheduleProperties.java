@@ -14,5 +14,8 @@ public class ScaleFusionScheduleProperties {
     @Value("${all.devices.fetch.device.profile.id:}")
     private Long deviceProfileId;
 
+    @Value("${all.devices.fetch.enabled:}")
+    private Boolean enabled;
+
 }
 
